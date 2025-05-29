@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h3>Lista de Alunos</h3>
+  <button class="btn btn-success" (click)="generateMore()">Gerar +300 alunos</button>
+  &nbsp;
+  <button class="btn btn-clear" (click)="clear()">Limpar</button>
+  &nbsp;
+  <button class="btn btn-report" (click)="generatePDF()">Gerar Relatório PDF</button>
+</div>
+
+<button class="btn btn-success btn-open" (click)="toggleStudentCards()">
+  {{ showStudentCards ? 'Ocultar Alunos' : 'Mostrar Alunos' }}
+</button>
+
+<div class="list">
+  <div class="row mb-4" *ngIf="showStudentCards">
+    <br /> 
+    <div class="col-md-6">
+      <select class="form-select" [(ngModel)]="selectedDegreeId" (change)="applyFilters()">
+        <option [ngValue]="undefined">Todas as séries</option>
+        <option *ngFor="let d of degrees" [ngValue]="d.id">{{ d.name }}</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <select class="form-select" [(ngModel)]="selectedClassId" (change)="applyFilters()">
+        <option [ngValue]="undefined">Todas as classes</option>
+        <option *ngFor="let c of classes" [ngValue]="c.id">{{ c.name }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="showStudentCards">
+    <input type="text" class="form-control" placeholder="Buscar aluno pelo nome..." [(ngModel)]="searchTerm"
+      (input)="applyFilters()" />
+    <div class="col-md-6 mb-3" *ngFor="let student of filteredStudents">
+      <app-student-card [student]="student" [classes]="classes"></app-student-card>
+    </div>
+  </div>
+</div>
+
+<app-student-chart [students]="filteredStudents" [degrees]="degrees" [classes]="classes">
+</app-student-chart>

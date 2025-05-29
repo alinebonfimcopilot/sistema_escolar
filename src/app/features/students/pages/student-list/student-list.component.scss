@@ -1,0 +1,114 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.d-flex.justify-content-between {
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+button.btn-success {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-clear {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #ced4da;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-report {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  float: right;
+}
+
+select.form-select {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: border 0.2s ease;
+  margin: -10px 0 0 0;
+  width: 100%;
+}
+
+.form-control {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: border 0.2s ease;
+  margin: 0 0 0 10px;
+  width: 96%;
+}
+
+select.form-select:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.row .col-md-6 {
+  padding: 10px;
+}
+
+app-student-card {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+app-student-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* Gráfico */
+app-student-chart {
+  display: block;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.btn-open {
+  margin: 0 0 0 25px;
+}
+
+.list {
+  margin: 0 0 0 20px;
+}

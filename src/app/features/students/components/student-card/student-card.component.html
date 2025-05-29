@@ -1,0 +1,11 @@
+<div class="card p-3 shadow-sm">
+  <label class="mb-1">Nome:</label>
+  <input type="text" class="form-control mb-2" [(ngModel)]="student.name">
+
+  <label>Classe:</label>
+  <select class="form-select mb-2" [(ngModel)]="student.classId">
+    <option *ngFor="let c of classes" [value]="c.id">{{ c.name }}</option>
+  </select>
+
+  <button class="btn btn-primary w-100" (click)="update()">Salvar</button>
+</div>

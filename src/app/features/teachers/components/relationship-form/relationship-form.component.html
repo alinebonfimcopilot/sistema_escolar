@@ -1,0 +1,44 @@
+<div class="card mb-4 p-3">
+  <h5>Adicionar Relacionamento</h5>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="mb-2">
+      <label>Professor</label>
+      <select class="form-select" formControlName="teacherId">
+        <option *ngFor="let t of teachers" [value]="t.id">{{ t.name }}</option>
+      </select>
+    </div>
+    <br />
+
+    <div class="mb-2">
+      <label>Matéria</label>
+      <select class="form-select" formControlName="matterId">
+        <option *ngFor="let m of matters" [value]="m.id">{{ m.name }}</option>
+      </select>
+    </div>
+    <br />
+
+    <div class="mb-2">
+      <label>Série</label>
+      <select class="form-select" formControlName="degreeId">
+        <option *ngFor="let d of degrees" [value]="d.id">{{ d.name }}</option>
+      </select>
+    </div>
+    <br />
+
+    <div class="mb-2">
+      <label>Classes</label>
+      <div class="d-flex flex-wrap">
+        <div class="form-check me-3" *ngFor="let c of classes">
+          <input class="form-check-input" type="checkbox"
+                 [value]="c.id" (change)="toggleClass(c.id)"
+                 [checked]="selectedClasses.includes(c.id)">
+          <label class="form-check-label">{{ c.name }}</label>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary mt-2">Adicionar</button>
+  </form>
+</div>

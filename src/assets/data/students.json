@@ -1,0 +1,37 @@
+[
+	{
+		"id":1,
+		"ra":12346,
+		"name":"João Pedro",
+		"degreeId":1,
+		"classId":1
+	},
+	{
+		"id":2,
+		"ra":456798,
+		"name":"Daniel Antônio",
+		"degreeId":2,
+		"classId":1
+	},
+	{
+		"id":3,
+		"ra":752156,
+		"name":"Francisco Aparecido",
+		"degreeId":3,
+		"classId":2
+	},
+	{
+		"id":4,
+		"ra":852348,
+		"name":"Carlos Daniel",
+		"degreeId":4,
+	  "classId":2
+	},
+	{
+		"id":5,
+		"ra":454643,
+		"name":"Alisson André",
+		"degreeId":6,
+	  	"classId":2
+	}
+]

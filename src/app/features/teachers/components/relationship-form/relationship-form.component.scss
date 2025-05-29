@@ -1,0 +1,71 @@
+/* Container geral do form no modal */
+form {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Espaçamento dos grupos */
+.mb-2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Label estilizado */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* Select estilo igual .form-select bootstrap */
+select.form-select {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+select.form-select:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Checkbox container */
+.form-check {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox input */
+.form-check-input {
+  margin-right: 0.3rem;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+/* Checkbox label */
+.form-check-label {
+  cursor: pointer;
+}
+
+/* Botão */
+button.btn-primary {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0b5ed7;
+}

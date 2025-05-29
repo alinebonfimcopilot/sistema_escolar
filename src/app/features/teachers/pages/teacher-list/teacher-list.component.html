@@ -1,0 +1,27 @@
+<div class="teachers">
+  <button class="btn btn-success btn-open" (click)="toggleShowForm()">
+    {{ showForm ? 'Ocultar Formulário' : 'Mostrar Formulário' }}
+  </button>
+
+  <div class="row" *ngIf="showForm">
+    <app-relationship-form [teachers]="teachers" [matters]="matters" [degrees]="degrees" [classes]="classes"
+      (newRelationship)="addRelationship($event)">
+    </app-relationship-form>
+  </div>
+
+  <div *ngFor="let rel of relationships" class="card mb-3 p-3 shadow-sm">
+    <h5>{{ getTeacherName(rel.teacherId) }} - {{ getMatterName(rel.matterId) }}</h5>
+
+    <div *ngFor="let deg of rel.degrees" class="row-list">
+      <strong>{{ getDegreeName(deg.degreeId) }}:</strong>
+      &nbsp;
+      <span *ngFor="let c of deg.classes" class="badge bg-primary me-1">
+        {{ getClassNameByClassObj(c) }}
+      </span>
+      &nbsp;
+      <button class="btn btn-sm btn-outline-secondary ms-2" (click)="showStudents(deg.degreeId)">
+        Ver alunos
+      </button>
+    </div>
+  </div>
+</div>

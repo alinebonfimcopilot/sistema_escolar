@@ -1,0 +1,69 @@
+app-relationship-form {
+  display: block;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.card strong {
+  color: #34495e;
+}
+
+.badge.bg-primary {
+  background-color: #3498db;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 0 10px 0 0;
+}
+
+button.btn-outline-secondary {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+button.btn-outline-secondary:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #000;
+}
+
+button.btn-success {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.teachers {
+  padding: 20px;
+}
+
+.row-list {
+  margin: 10px 0 0 0;
+}
